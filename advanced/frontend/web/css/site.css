@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: #333;
+    background: #f8f9fa;
+}
+
+/* NAVBAR */
+.navbar {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+.navbar-brand {
+    font-weight: 700;
+    color: #198754 !important;
+}
+.navbar-nav .nav-link {
+    color: #ccc !important;
+    transition: color 0.3s;
+}
+.navbar-nav .nav-link:hover {
+    color: #fff !important;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+.hero-left {
+    width: 50%;
+    background: #198754;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+.hero-content {
+    max-width: 500px;
+}
+.hero-left h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    line-height: 1.3;
+}
+.stats {
+    display: flex;
+    gap: 2rem;
+}
+.stats div {
+    border-left: 2px solid rgba(255,255,255,0.5);
+    padding-left: 1rem;
+}
+.stats h2 {
+    font-weight: 700;
+    margin: 0;
+}
+.stats p {
+    margin: 0;
+}
+
+/* Right (Carousel) */
+.hero-right {
+    width: 50%;
+    position: relative;
+}
+.hero-right img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* Texto central da imagem */
+.carousel-caption {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-caption h1 {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+/* Carrossel Dots e Setas */
+.owl-nav button {
+    background: rgba(255,255,255,0.2) !important;
+    border: 2px solid #fff !important;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    color: #fff !important;
+    font-size: 1.5rem !important;
+    transition: 0.3s;
+}
+.owl-nav button:hover {
+    background: #198754 !important;
+    border-color: #198754 !important;
+}
+.owl-dots {
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    text-align: center;
+}
+.owl-dot span {
+    width: 10px;
+    height: 10px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 50%;
+    margin: 5px;
+    transition: 0.3s;
+}
+.owl-dot.active span {
+    background: #198754;
+}
+
+/* TRIAGEM */
+#triagem {
+    padding: 80px 0;
+}
+#triagem h2 {
+    color: #198754;
+    font-weight: 700;
+}
+#triagem .card {
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+#triagem .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* ==============================
+   SECÇÃO SOBRE NÓS
+============================== */
+#sobre-nos {
+    background-color: #fff;
+}
+
+#sobre-nos .img-box {
+    position: relative;
+    display: inline-block;
+}
+
+#sobre-nos .main-img {
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#sobre-nos .sub-img {
+    position: absolute;
+    bottom: -30px;
+    left: -40px;
+    width: 50%;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+#sobre-nos h2 {
+    font-size: 2rem;
+    line-height: 1.4;
+}
+
+#sobre-nos p {
+    color: #6c757d;
+}
+
+#sobre-nos ul {
+    font-size: 1rem;
+    color: #444;
+}
+
+#sobre-nos .btn-success {
+    background-color: #198754;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+#sobre-nos .btn-success:hover {
+    background-color: #157347;
+}
+
+/* FOOTER */
+footer {
+    background: #212529;
+    color: #adb5bd;
+    padding: 20px 0;
+    font-size: 0.95rem;
+}
+
+/* RESPONSIVO */
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        height: auto;
+    }
+    .hero-left, .hero-right {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 3rem 2rem;
+    }
+    .hero-right img {
+        height: 60vh;
+    }
+    .carousel-caption h1 {
+        font-size: 2.5rem;
+    }
+}
+.laranja {
+    color: #FF8C00;
+}
+.text-amarelo {
+    color: #FFFF00 !important;
+}
+
+.login-bg {
+    background: url('../img/hospital.png') center center / cover no-repeat fixed;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* 🔹 Camada branca semi-transparente por cima da imagem */
+.login-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+    z-index: 0;
+}
+
+/* 🔹 Garante que o conteúdo do login fica acima do overlay */
+.login-bg > * {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-light.rounded-circle {
+    width: 60px;          /* altura e largura iguais */
+    height: 60px;
+    padding: 0;           /* remove o padding que esticava */
+    display: flex;        /* centraliza o ícone */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Animação de levantar o card */
+.doctor-card {
+    transition: all 0.4s ease;
+}
+
+.doctor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Esconde as redes sociais inicialmente */
+.doctor-card .social-icons {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #009970; /* verde do tema */
+    text-align: center;
+    padding: 10px 0;
+    transform: translateY(100%); /* começa fora da imagem */
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Ao passar o rato no card, a barra sobe */
+.doctor-card:hover .social-icons {
+    transform: translateY(0%);
+}
+
+/* Garante que a imagem corta o conteúdo que sai */
+.doctor-card .position-relative {
+    overflow: hidden;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 8px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #c6f3dc;
+}
+
+.team-card {
+    border-radius: 12px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.team-card img {
+    height: 320px;
+    object-fit: cover;
+}
+
+/* Redes sociais - escondidas inicialmente */
+.social-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+/* Aparecem quando o rato está sobre o card */
+.team-card:hover .social-footer {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.social-footer a {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    display: inline-block;
+}
+
+.social-footer a:hover {
+    transform: scale(1.2);
+    opacity: 0.85;
+}
+
+.team-card .card-body {
+    background-color: rgba(25, 135, 84, 0.05); /* verde translúcido */
+    transition: background-color 0.3s ease;
+}
+
+/* quando passar o rato, intensifica ligeiramente o tom */
+.team-card:hover .card-body {
+    background-color: rgba(25, 135, 84, 0.1);
+}

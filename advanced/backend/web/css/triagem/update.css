@@ -1,0 +1,28 @@
+.triagem-update {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.triagem-update h1 {
+    color: #198754;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/*   BOTÃO VOLTAR (AZUL)  */
+.btn-voltar {
+    background: linear-gradient(90deg, #0d6efd 0%, #3b8bff 100%);
+    color: #fff !important;
+    font-weight: 600;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(13, 110, 253, 0.3);
+    transition: 0.2s;
+}
+.btn-voltar:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    color: #fff !important;
+}
+.butao {
+    padding: 15px;
+}

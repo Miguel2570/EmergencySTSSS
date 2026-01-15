@@ -1,0 +1,42 @@
+.pulseira-update {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.pulseira-update h1 {
+    color: #198754;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.pulseira-form {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 25px 30px;
+    margin-bottom: 25px;
+}
+.pulseira-form h5 {
+    color: #198754;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+/*   BOTÃO VOLTAR (AZUL)  */
+.btn-voltar {
+    background: linear-gradient(90deg, #0d6efd 0%, #3b8bff 100%);
+    color: #fff !important;
+    font-weight: 600;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(13, 110, 253, 0.3);
+    transition: 0.2s;
+}
+.btn-voltar:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    color: #fff !important;
+}
+.butao {
+    padding: 15px;
+}
