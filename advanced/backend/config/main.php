@@ -166,6 +166,7 @@
                             //Atualizar perfil via POST
                             'POST {id}' => 'update',
 
+                            'GET total' => 'total',
                         ],
                     ],
 
